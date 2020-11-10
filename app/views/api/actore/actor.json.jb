@@ -4,4 +4,5 @@
   age: @actor.age,
   gender: @actor.gender,
   known_for: @actor.known_for,
+  movie_plot: @actor.movie.plot,
 }
