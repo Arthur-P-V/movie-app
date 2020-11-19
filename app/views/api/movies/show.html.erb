@@ -1,0 +1,18 @@
+<div>
+  <h1> <%= @movie.title%></h1>
+  <h2> <%= @movie.year%></h2>
+  <h3><%= @movie.plot%></h3>
+</div>
+<div>
+  <h3>Movie Suggestion</h3>
+  <form method="POST" action="#">
+    <label for="title">Title</label>
+    <input id="title" type="text" name="title"><br><br>
+    <label for="year">Year</label>
+    <input id="title" type="text" name="title"><br><br>
+    <label for="plot">Plot</label>
+    <input id="plot" type="text" name="plot"><br><br>
+    <input type="submit" value="create">
+
+  </form>
+</div>
