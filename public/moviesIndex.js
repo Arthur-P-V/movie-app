@@ -1,5 +1,6 @@
 /* global Vue */
 /* global axios */
+
 new Vue({
   el: "#app",
   data() {
@@ -7,7 +8,7 @@ new Vue({
       movies: null,
     };
   },
-  mounted() {
-    axios.get("https://localhost:3000/api/movies").then((response) => (this.movies = response));
+  created: function () {
+    axios.get("http://localhost:3000/api/movies").then((response) => (this.movies = response));
   },
 });
